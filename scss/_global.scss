@@ -1,0 +1,118 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    color: $dark;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.header {
+    padding: 60px 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        margin: 0px 63px 0px auto;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    &__cart {
+        margin-left: 22px;
+        width: 44px;
+        height: 44px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+
+        &:focus {
+            background-color: $orange-100;
+            box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+        }
+
+        &:hover {
+            background-color: $orange-700;
+        }
+
+        &:active {
+            background-color: $orange-100;
+            box-shadow: none;
+        }
+    }
+}
+
+.menu {
+    width: 301px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 21px;
+        border-radius: 5px;
+    }
+
+    &__link {
+        color: $dark;
+        border-radius: 5px;
+
+        &:focus {
+            box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+        }
+
+        &:hover {
+            color: $orange-900;
+        }
+
+        &:active {
+            text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+            box-shadow: none;
+            color: $dark;
+        }
+    }
+}
+
+.search {
+
+    &__input {
+        display: none;
+    }
+
+    &__button {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: transparent;
+
+        &:focus {
+            background-color: $orange-100;
+            box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+        }
+
+        &:hover {
+            background-color: $orange-700;
+        }
+
+        &:active {
+            background-color: $orange-100;
+            box-shadow: none;
+        }
+    }
+}
