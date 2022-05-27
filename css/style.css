@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -72,7 +72,9 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: 'Rubik', sans-serif;
+  font-weight: 400;
   color: #31352b;
+  background-color: #f9faff;
 }
 
 .container {
@@ -111,16 +113,24 @@ body {
 
 .header__cart:focus {
   background-color: rgba(255, 122, 80, 0.1);
-  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+  box-shadow: 0px 0px 0px 2px #FF7A50;
 }
 
 .header__cart:hover {
   background-color: #FF7A50;
 }
 
+.header__cart:hover path {
+  stroke: #ffffff;
+}
+
 .header__cart:active {
   background-color: rgba(255, 122, 80, 0.1);
   box-shadow: none;
+}
+
+.header__cart:active path {
+  stroke: #363853;
 }
 
 .menu {
@@ -145,7 +155,7 @@ body {
 }
 
 .menu__link:focus {
-  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+  outline: 2px solid #FF7A50;
 }
 
 .menu__link:hover {
@@ -154,7 +164,7 @@ body {
 
 .menu__link:active {
   text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
-  box-shadow: none;
+  outline: none;
   color: #31352b;
 }
 
@@ -174,14 +184,115 @@ body {
 
 .search__button:focus {
   background-color: rgba(255, 122, 80, 0.1);
-  box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+  outline: 2px solid #FF7A50;
 }
 
 .search__button:hover {
   background-color: #FF7A50;
 }
 
+.search__button:hover ellipse, .search__button:hover path {
+  stroke: #ffffff;
+}
+
 .search__button:active {
   background-color: rgba(255, 122, 80, 0.1);
-  box-shadow: none;
+  outline: none;
+}
+
+.search__button:active ellipse, .search__button:active path {
+  stroke: #363853;
+}
+
+.button {
+  display: block;
+  background-color: #FF6838;
+  padding: 12px 32px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  outline: 2px solid #FF7A50;
+  color: #FF6838;
+}
+
+.button:focus {
+  background-color: rgba(255, 122, 80, 0.1);
+  outline: 2px solid #FF7A50;
+  color: #FF6838;
+}
+
+.button:active {
+  background-color: rgba(255, 122, 80, 0.1);
+  outline: 2px solid #FF7A50;
+  color: #FF6838;
+}
+
+.more-button {
+  font-size: 20px;
+  line-height: 150%;
+  color: #363853;
+  margin-left: 34px;
+  border-radius: 5px;
+}
+
+.more-button:hover {
+  color: #FF6838;
+  outline: none;
+}
+
+.more-button:focus {
+  color: #363853;
+  outline: 2px solid #FF7A50;
+  text-decoration: none;
+}
+
+.more-button:active {
+  text-shadow: 2px 2px 5px #363853;
+  outline: none;
+}
+
+.hero {
+  height: calc(100vh - 164px);
+}
+
+.hero__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url(../images/scooter-guy.png) right center no-repeat;
+  background-size: contain;
+}
+
+.hero__title {
+  font-weight: 500;
+  font-size: 66px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #363853;
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.hero__title span {
+  color: #FF6838;
+}
+
+.hero__subtitle {
+  font-size: 20px;
+  line-height: 150%;
+  color: #31352b;
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.hero__buttons {
+  display: flex;
+  align-items: center;
 }

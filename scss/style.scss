@@ -1,4 +1,44 @@
-@import 'fonts';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 @import 'reset';
 @import 'vars';
 @import 'global';
+
+.hero {
+    height: calc(100vh - 164px);
+
+    &__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: url(../images/scooter-guy.png) right center no-repeat;
+        background-size: contain;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 66px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: $darkBlue-900;
+        width: 450px;
+        margin-bottom: 20px;
+
+        span {
+            color: $orange-900;
+        }
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 150%;
+        color: $dark;
+        width: 450px;
+        margin-bottom: 20px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+}
