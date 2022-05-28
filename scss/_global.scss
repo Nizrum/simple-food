@@ -86,6 +86,7 @@ body {
 
         &:hover {
             color: $orange-900;
+            outline: none;
         }
 
         &:active {
@@ -145,14 +146,14 @@ body {
     line-height: 130%;
     letter-spacing: 0.03em;
 
-    &:hover {
-        background-color: $white;
+    &:focus {
+        background-color: $orange-100;
         outline: 2px solid $orange-700;
         color: $orange-900;
     }
 
-    &:focus {
-        background-color: $orange-100;
+    &:hover {
+        background-color: $white;
         outline: 2px solid $orange-700;
         color: $orange-900;
     }
@@ -165,25 +166,67 @@ body {
 }
 
 .more-button {
-        font-size: 20px;
-        line-height: 150%;
+    font-size: 20px;
+    line-height: 150%;
+    color: $darkBlue-900;
+    border-radius: 5px;
+    display: block;
+
+    &:focus {
         color: $darkBlue-900;
-        margin-left: 34px;
-        border-radius: 5px;
-
-        &:hover {
-            color: $orange-900;
-            outline: none;
-        }
-
-        &:focus {
-            color: $darkBlue-900;
-            outline: 2px solid $orange-700;
-            text-decoration: none;
-        }
-
-        &:active {
-            text-shadow: 2px 2px 5px $darkBlue-900;
-            outline: none;
-        }
+        outline: 2px solid $orange-700;
     }
+
+    &:hover {
+        color: $orange-900;
+        outline: none;
+    }
+
+    &:active {
+        text-shadow: 2px 2px 5px $darkBlue-900;
+        outline: none;
+        color: $darkBlue-900;
+    }
+}
+
+.product-card {
+    width: 210px;
+    min-height: 300px;
+    padding: 20px 15px;
+    background-color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid $silver-200;
+
+    &__image {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: auto;
+        font-size: 15px;
+        line-height: 18px;
+        color: $dark;
+    }
+
+    &__price {
+        margin: 10px 0px 10px;
+        font-weight: 500;
+        color: $darkBlue-900;
+        font-size: 15px;
+        line-height: 140%;
+    }
+
+    &__button {
+        font-size: 14px;
+        line-height: 130%;
+        padding: 7px 16px;
+    }
+
+    &:hover {
+        border: 1px solid $orange-900;
+    }
+}

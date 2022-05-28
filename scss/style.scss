@@ -5,6 +5,7 @@
 
 .hero {
     height: calc(100vh - 164px);
+    margin-bottom: 120px;
 
     &__container {
         height: 100%;
@@ -40,5 +41,98 @@
     &__buttons {
         display: flex;
         align-items: center;
+    }
+
+    &__more-button {
+        margin-left: 34px;
+    }
+}
+
+.popular {
+    margin-bottom: 120px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 130%;
+        color: $darkBlue-900;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+
+    &__tab {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__product-cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    &__product-card {
+        margin-bottom: 30px;
+    }
+
+    &__more-button {
+        background-color: transparent;
+        margin: 0 auto;
+    }
+}
+
+.tab {
+    padding: 13px 32px;
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    border-radius: 5px;
+    outline: 1px solid $silver-200;
+    box-sizing: border-box;
+    color: $darkBlue-900;
+
+    &__text {
+        margin-left: 10px;
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    path {
+        fill: $darkBlue-900;
+    }
+
+    &:focus {
+        outline: 2px solid $orange-700;
+        color: $darkBlue-900;
+    }
+
+    &:hover {
+        outline: 2px solid $orange-700;
+        color: $orange-900;
+
+        path {
+            fill: $orange-900;
+        }
+    }
+
+    &:active {
+        box-shadow: inset 0px -5px 12px rgba(255, 104, 56, 0.2);
+        color: $darkBlue-900;
+        outline: none;
+
+        path {
+            fill: $darkBlue-900;
+        }
     }
 }
