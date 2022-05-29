@@ -139,7 +139,7 @@
     }
 }
 
-.info {
+.delivery {
     margin-bottom: 120px;
 
     &__container {
@@ -190,5 +190,29 @@
 
     &__text {
         margin-left: 30px;
+    }
+}
+
+.best-restaurants {
+    margin-bottom: 120px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 130%;
+        color: $darkBlue-900;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    &__restaurants {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__restaurant-card {
+        margin-bottom: 30px;
     }
 }
