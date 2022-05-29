@@ -16,13 +16,16 @@
         background-size: contain;
     }
 
+    &__wrapper {
+        width: 450px;
+    }
+
     &__title {
         font-weight: 500;
         font-size: 66px;
         line-height: 130%;
         text-transform: uppercase;
         color: $darkBlue-900;
-        width: 450px;
         margin-bottom: 20px;
 
         span {
@@ -34,7 +37,6 @@
         font-size: 20px;
         line-height: 150%;
         color: $dark;
-        width: 450px;
         margin-bottom: 20px;
     }
 
@@ -134,5 +136,59 @@
         path {
             fill: $darkBlue-900;
         }
+    }
+}
+
+.info {
+    margin-bottom: 120px;
+
+    &__container {
+        width: 1030px;
+        background: url('../images/food-delivery.png') 0 0 no-repeat;
+        background-size: contain;
+        padding: 55px 0;
+    }
+
+    &__wrapper {
+        width: 470px;
+        margin-left: auto;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 130%;
+        color: $darkBlue-900;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 30px;
+    }
+
+    &__advantages {
+        margin-bottom: 30px;
+    }
+
+    &__advantage {
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.advantage {
+    font-size: 24px;
+    line-height: 150%;
+    color: $darkBlue-900;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        margin-left: 30px;
     }
 }
