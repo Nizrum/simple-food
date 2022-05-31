@@ -216,3 +216,127 @@
         margin-bottom: 30px;
     }
 }
+
+.reviews {
+    margin-bottom: 120px;
+
+    &__container {
+        width: 990px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 130%;
+        color: $darkBlue-900;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    &__content {
+        margin-bottom: 50px;
+    }
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    &__bullets {
+        display: flex;
+        align-items: center;
+    }
+
+    &__bullet {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $gray;
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &_active {
+            background-color: $orange-900;
+        }
+    }
+
+    &__button {
+        width: 34px;
+        height: 34px;
+        border: 3px solid $gray;
+        border-radius: 50%;
+        background-color: transparent;
+        background: url(../images/slider-arrow.svg) 7px center no-repeat;
+
+        &_next {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.review {
+    display: none;
+    align-items: center;
+
+    &_active {
+        display: flex;
+    }
+
+    &__image {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-right: 80px;
+    }
+
+    &__text {
+        width: 570px;
+    }
+
+    &__quote {
+        font-style: italic;
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 24px;
+            height: 20px;
+            background-image: url(../images/quote.svg);
+            position: absolute;
+            top: 0;
+            left: -40px;
+        }
+
+        &:after {
+            content: '';
+            width: 24px;
+            height: 20px;
+            background-image: url(../images/quote.svg);
+            position: absolute;
+            bottom: 0;
+            right: -40px;
+            transform: scaleX(-1);
+        }
+    }
+
+    &__username {
+        font-size: 20px;
+        line-height: 130%;
+        color: $orange-900;
+        margin-bottom: 15px;
+    }
+
+    &__userstatus {
+        font-size: 14px;
+        line-height: 130%;
+    }
+}
