@@ -61,6 +61,24 @@ body {
     }
 }
 
+.logo {
+    border-radius: 5px;
+
+    &:focus {
+        outline: 2px solid $orange-700;
+    }
+
+    &:hover {
+        outline: none;
+        opacity: 0.8;
+    }
+
+    &:active {
+        outline: none;
+        opacity: 0.5;
+    }
+}
+
 .menu {
     width: 301px;
 
@@ -160,7 +178,7 @@ body {
 
     &:active {
         background-color: $orange-100;
-        outline: 2px solid $orange-700;
+        outline: none;
         color: $orange-900;
     }
 }
@@ -231,88 +249,235 @@ body {
     }
 }
 
-.restaurant-card {
-    width: 370px;
-    background: #FFFFFF;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+.app {
+    margin-bottom: 120px;
 
-    &__image {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
+    &__container {
+        padding: 40px;
+        background: url('../images/app-bg.jpg') center right no-repeat;
+        background-size: contain;
+    }
+
+    &__wrapper {
+        width: 540px;
     }
 
     &__title {
-        font-size: 24px;
+        font-weight: 500;
+        font-size: 36px;
         line-height: 130%;
-        margin-bottom: 20px;
+        color: $darkBlue-900;
+        margin-bottom: 45px;
     }
 
     &__text {
-        padding: 20px 15px 20px;
+        font-size: 20px;
+        line-height: 150%;
+        margin-bottom: 30px;
     }
 
-    &__info {
+    &__buttons {
         display: flex;
         align-items: center;
+    }
+
+    &__button {
+        margin-right: 30px;
+        background-color: transparent;
+        border-radius: 5px;
+        overflow: hidden;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        img {
+            height: 40px;
+        }
+
+        &_appstore {
+            border-radius: 7px;
+        }
+    }
+}
+
+.footer {
+    padding-bottom: 60px;
+    border-bottom: 1px solid $silver-200;
+
+    &__container {
+        display: flex;
+        align-items: flex-start;
         justify-content: space-between;
     }
 
-    &__work-time {
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 30px;
-        padding-left: 32px;
-        position: relative;
+    &__subscribe {
+        width: 200px;
+    }
 
-        &:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 3px;
-            width: 22px;
-            height: 22px;
-            background-image: url('../images/work-time-icon.png');
+    &__logo {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 13px 15px;
+        border-radius: 5px;
+        border: 1px solid $gray;
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 12px;
+
+        &::placeholder {
+            color: $gray;
+        }
+
+        &:focus {
+            outline: 2px solid $orange-900;
+        }
+
+        &:hover::placeholder {
+            color: $darkBlue-900;
         }
     }
 
     &__button {
-        background-color: $orange-900;
-        padding: 10px 32px 9px;
-        border-radius: 20px;
-        border: 2px solid $orange-900;
-        transition: padding 0.3s;
-        display: block;
+        display: flex;
+        align-items: center;
+        padding: 13px 38px;
+        font-size: 14px;
+        line-height: 130%;
 
-        &:focus {
-            border: 2px solid $orange-700;
-            background-color: $orange-100;
+        svg {
+            margin-right: 15px;
+        }
+
+        &:hover, &:focus, &:active {
 
             path {
                 fill: $orange-900;
             }
         }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 570px;
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        width: 187px;
+        margin-bottom: 20px;
+        
+        a {
+            color: $dark;
+            border-radius: 5px;
+
+            &:focus {
+                outline: 2px solid $orange-700;
+            }
+        
+            &:hover {
+                color: $orange-900;
+                outline: none;
+            }
+        
+            &:active {
+                text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+                outline: none;
+                color: $dark;
+            }
+        }
+    }
+
+    &__info {
+        font-size: 16px;
+        line-height: 32px;
+        height: 180px;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__contact-link {
+        display: flex;
+        align-items: center;
+
+        a {
+            color: $dark;
+            margin-left: 7px;
+            border-radius: 5px;
+
+            &:focus {
+                outline: 2px solid $orange-700;
+            }
+        
+            &:hover {
+                color: $orange-900;
+                outline: none;
+            }
+        
+            &:active {
+                text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+                outline: none;
+                color: $dark;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+    }
+
+    &__social {
+        margin-right: 13px;
+        width: 39px;
+        height: 39px;
+        background-color: $silver-200;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:last-child {
+            margin-right: none;
+        }
+
+        &:focus {
+            outline: 2px solid $orange-700;
+            background-color: $orange-100;
+        }
 
         &:hover {
-            border: 2px solid $orange-700;
-            background-color: $white;
-            padding-right: 12px;
-            padding-left: 52px;
+            outline: none;
+            background-color: $orange-700;
 
             path {
-                fill: $orange-900;
+                fill: $white;
             }
         }
 
         &:active {
+            outline: none;
             background-color: $orange-100;
-            border-color: transparent;
+
+            path {
+                    fill: $orange-700;
+            }
         }
     }
+}
 
-    &:hover {
-        box-shadow: 0px 3px 15px rgba(255, 104, 56, 0.5);
-    }
+.copywrite {
+    padding: 30px 0px;
+    text-align: center;
 }

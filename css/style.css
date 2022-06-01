@@ -133,6 +133,24 @@ body {
   stroke: #363853;
 }
 
+.logo {
+  border-radius: 5px;
+}
+
+.logo:focus {
+  outline: 2px solid #FF7A50;
+}
+
+.logo:hover {
+  outline: none;
+  opacity: 0.8;
+}
+
+.logo:active {
+  outline: none;
+  opacity: 0.5;
+}
+
 .menu {
   width: 301px;
 }
@@ -230,7 +248,7 @@ body {
 
 .button:active {
   background-color: rgba(255, 122, 80, 0.1);
-  outline: 2px solid #FF7A50;
+  outline: none;
   color: #FF6838;
 }
 
@@ -300,90 +318,234 @@ body {
   border: 1px solid #FF6838;
 }
 
-.restaurant-card {
-  width: 370px;
-  background: #FFFFFF;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.app {
+  margin-bottom: 120px;
+}
+
+.app__container {
+  padding: 40px;
+  background: url("../images/app-bg.jpg") center right no-repeat;
+  background-size: contain;
+}
+
+.app__wrapper {
+  width: 540px;
+}
+
+.app__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+  color: #363853;
+  margin-bottom: 45px;
+}
+
+.app__text {
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.app__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.app__button {
+  margin-right: 30px;
+  background-color: transparent;
+  border-radius: 5px;
   overflow: hidden;
 }
 
-.restaurant-card__image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+.app__button:last-child {
+  margin: 0;
 }
 
-.restaurant-card__title {
-  font-size: 24px;
-  line-height: 130%;
-  margin-bottom: 20px;
+.app__button img {
+  height: 40px;
 }
 
-.restaurant-card__text {
-  padding: 20px 15px 20px;
+.app__button_appstore {
+  border-radius: 7px;
 }
 
-.restaurant-card__info {
+.footer {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ececec;
+}
+
+.footer__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
-.restaurant-card__work-time {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  padding-left: 32px;
-  position: relative;
+.footer__subscribe {
+  width: 200px;
 }
 
-.restaurant-card__work-time:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 3px;
-  width: 22px;
-  height: 22px;
-  background-image: url("../images/work-time-icon.png");
-}
-
-.restaurant-card__button {
-  background-color: #FF6838;
-  padding: 10px 32px 9px;
-  border-radius: 20px;
-  border: 2px solid #FF6838;
-  transition: padding 0.3s;
+.footer__logo {
   display: block;
+  margin-bottom: 30px;
 }
 
-.restaurant-card__button:focus {
-  border: 2px solid #FF7A50;
-  background-color: rgba(255, 122, 80, 0.1);
+.footer__input {
+  width: 100%;
+  padding: 13px 15px;
+  border-radius: 5px;
+  border: 1px solid #c2c2c2;
+  font-size: 14px;
+  line-height: 130%;
+  margin-bottom: 12px;
 }
 
-.restaurant-card__button:focus path {
+.footer__input::placeholder {
+  color: #c2c2c2;
+}
+
+.footer__input:focus {
+  outline: 2px solid #FF6838;
+}
+
+.footer__input:hover::placeholder {
+  color: #363853;
+}
+
+.footer__button {
+  display: flex;
+  align-items: center;
+  padding: 13px 38px;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.footer__button svg {
+  margin-right: 15px;
+}
+
+.footer__button:hover path, .footer__button:focus path, .footer__button:active path {
   fill: #FF6838;
 }
 
-.restaurant-card__button:hover {
-  border: 2px solid #FF7A50;
-  background-color: #ffffff;
-  padding-right: 12px;
-  padding-left: 52px;
+.footer__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 570px;
 }
 
-.restaurant-card__button:hover path {
-  fill: #FF6838;
+.footer__link {
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  width: 187px;
+  margin-bottom: 20px;
 }
 
-.restaurant-card__button:active {
+.footer__link a {
+  color: #31352b;
+  border-radius: 5px;
+}
+
+.footer__link a:focus {
+  outline: 2px solid #FF7A50;
+}
+
+.footer__link a:hover {
+  color: #FF6838;
+  outline: none;
+}
+
+.footer__link a:active {
+  text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+  outline: none;
+  color: #31352b;
+}
+
+.footer__info {
+  font-size: 16px;
+  line-height: 32px;
+  height: 180px;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer__contact-link a {
+  color: #31352b;
+  margin-left: 7px;
+  border-radius: 5px;
+}
+
+.footer__contact-link a:focus {
+  outline: 2px solid #FF7A50;
+}
+
+.footer__contact-link a:hover {
+  color: #FF6838;
+  outline: none;
+}
+
+.footer__contact-link a:active {
+  text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+  outline: none;
+  color: #31352b;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+}
+
+.footer__social {
+  margin-right: 13px;
+  width: 39px;
+  height: 39px;
+  background-color: #ececec;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__social:last-child {
+  margin-right: none;
+}
+
+.footer__social:focus {
+  outline: 2px solid #FF7A50;
   background-color: rgba(255, 122, 80, 0.1);
-  border-color: transparent;
 }
 
-.restaurant-card:hover {
-  box-shadow: 0px 3px 15px rgba(255, 104, 56, 0.5);
+.footer__social:hover {
+  outline: none;
+  background-color: #FF7A50;
+}
+
+.footer__social:hover path {
+  fill: #ffffff;
+}
+
+.footer__social:active {
+  outline: none;
+  background-color: rgba(255, 122, 80, 0.1);
+}
+
+.footer__social:active path {
+  fill: #FF7A50;
+}
+
+.copywrite {
+  padding: 30px 0px;
+  text-align: center;
 }
 
 .hero {
@@ -597,6 +759,92 @@ body {
   margin-bottom: 30px;
 }
 
+.restaurant-card {
+  width: 370px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.restaurant-card__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.restaurant-card__title {
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.restaurant-card__text {
+  padding: 20px 15px 20px;
+}
+
+.restaurant-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurant-card__work-time {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 32px;
+  position: relative;
+}
+
+.restaurant-card__work-time:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/work-time-icon.png");
+}
+
+.restaurant-card__button {
+  background-color: #FF6838;
+  padding: 10px 32px 9px;
+  border-radius: 20px;
+  border: 2px solid #FF6838;
+  transition: padding 0.3s;
+  display: block;
+}
+
+.restaurant-card__button:focus {
+  border: 2px solid #FF7A50;
+  background-color: rgba(255, 122, 80, 0.1);
+}
+
+.restaurant-card__button:focus path {
+  fill: #FF6838;
+}
+
+.restaurant-card__button:hover {
+  border: 2px solid #FF7A50;
+  background-color: #ffffff;
+  padding-right: 12px;
+  padding-left: 52px;
+}
+
+.restaurant-card__button:hover path {
+  fill: #FF6838;
+}
+
+.restaurant-card__button:active {
+  background-color: rgba(255, 122, 80, 0.1);
+  border-color: transparent;
+}
+
+.restaurant-card:hover {
+  box-shadow: 0px 3px 15px rgba(255, 104, 56, 0.5);
+}
+
 .reviews {
   margin-bottom: 120px;
 }
@@ -647,17 +895,64 @@ body {
   background-color: #FF6838;
 }
 
+.reviews__bullet:focus {
+  outline: 2px solid #FF7A50;
+}
+
+.reviews__bullet:hover {
+  outline: 2px solid #FF7A50;
+  background-color: rgba(255, 122, 80, 0.1);
+}
+
+.reviews__bullet:active {
+  outline: none;
+  background-color: #FF7A50;
+}
+
 .reviews__button {
   width: 34px;
   height: 34px;
   border: 3px solid #c2c2c2;
   border-radius: 50%;
   background-color: transparent;
-  background: url(../images/slider-arrow.svg) 7px center no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__button svg {
+  margin-left: -2.5px;
 }
 
 .reviews__button_next {
   transform: rotate(180deg);
+}
+
+.reviews__button:focus {
+  outline: 2px solid #FF7A50;
+}
+
+.reviews__button:focus:hover {
+  outline: none;
+}
+
+.reviews__button:hover {
+  background-color: rgba(255, 122, 80, 0.1);
+  border-color: #FF7A50;
+}
+
+.reviews__button:hover path {
+  fill: #FF7A50;
+}
+
+.reviews__button:active {
+  background-color: rgba(255, 122, 80, 0.1);
+  border: none;
+  outline: none;
+}
+
+.reviews__button:active path {
+  fill: #FF7A50;
 }
 
 .review {
