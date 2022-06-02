@@ -323,7 +323,7 @@ body {
 }
 
 .app__container {
-  padding: 40px;
+  padding: 40px 0;
   background: url("../images/app-bg.jpg") center right no-repeat;
   background-size: contain;
 }
@@ -546,6 +546,41 @@ body {
 .copywrite {
   padding: 30px 0px;
   text-align: center;
+}
+
+.breadcrumbs {
+  background-color: rgba(255, 122, 80, 0.1);
+  padding: 24px 0px;
+  margin-bottom: 60px;
+}
+
+.breadcrumbs__container {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #505050;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs__sep {
+  margin: 0px 5px;
+}
+
+.breadcrumbs__sep svg {
+  transform: rotate(180deg);
+  height: 10px;
+}
+
+.breadcrumbs__sep svg path {
+  fill: #c1c1c1;
 }
 
 .hero {
@@ -1014,4 +1049,85 @@ body {
 .review__userstatus {
   font-size: 14px;
   line-height: 130%;
+}
+
+.promo {
+  margin-bottom: 120px;
+}
+
+.promo__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+  color: #363853;
+  margin-bottom: 60px;
+}
+
+.promo__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-card {
+  width: 370px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  color: #31352b;
+}
+
+.promo-card__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.promo-card__text {
+  padding: 15px 20px;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.promo-card:hover {
+  box-shadow: 0px 3px 15px rgba(255, 104, 56, 0.5);
+}
+
+.catalog {
+  margin-bottom: 120px;
+}
+
+.catalog__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.catalog__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+  color: #363853;
+  margin-right: auto;
+}
+
+.catalog__filter {
+  margin-right: 15px;
+}
+
+.catalog__filter:last-child {
+  margin-right: 0;
+}
+
+.filter {
+  padding: 15px 40px 15px 15px;
+  border: 1px solid #c2c2c2;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  appearance: none;
+  background: url(../images/select.svg) calc(100% - 15px) center no-repeat;
+  background-color: #ffffff;
 }
