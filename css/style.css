@@ -370,6 +370,10 @@ body {
   border-radius: 7px;
 }
 
+.app__button:focus {
+  outline: 1px solid #FF6838;
+}
+
 .footer {
   padding-bottom: 60px;
   border-bottom: 1px solid #ececec;
@@ -543,7 +547,7 @@ body {
   fill: #FF7A50;
 }
 
-.copywrite {
+.copyright {
   padding: 30px 0px;
   text-align: center;
 }
@@ -570,6 +574,10 @@ body {
   text-decoration: underline;
 }
 
+.breadcrumbs__link:focus {
+  text-decoration: underline;
+}
+
 .breadcrumbs__sep {
   margin: 0px 5px;
 }
@@ -581,6 +589,66 @@ body {
 
 .breadcrumbs__sep svg path {
   fill: #c1c1c1;
+}
+
+.checkbox {
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__input:focus + .checkbox__fake {
+  border: 1px solid #FF6838;
+}
+
+.checkbox__label:hover .checkbox__fake {
+  border: 1px solid #FF6838;
+}
+
+.checkbox__label:hover .checkbox__text {
+  color: #FF6838;
+}
+
+.checkbox__input {
+  width: 0px;
+  height: 0px;
+}
+
+.checkbox__input:checked + .checkbox__fake:before {
+  opacity: 1;
+}
+
+.checkbox__input:checked + .checkbox__fake {
+  border: 1px solid #363853;
+}
+
+.checkbox__fake {
+  display: block;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  background-color: rgba(255, 122, 80, 0.1);
+  position: relative;
+}
+
+.checkbox__fake:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 12px;
+  height: 8.5px;
+  background: url(../images/checked.svg) 0 0 no-repeat;
+  opacity: 0;
 }
 
 .hero {
@@ -1090,6 +1158,10 @@ body {
   line-height: 130%;
 }
 
+.promo-card:focus {
+  box-shadow: 0px 3px 15px rgba(255, 104, 56, 0.5);
+}
+
 .promo-card:hover {
   box-shadow: 0px 3px 15px rgba(255, 104, 56, 0.5);
 }
@@ -1120,6 +1192,131 @@ body {
   margin-right: 0;
 }
 
+.catalog__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.catalog__sidebar {
+  width: 271px;
+}
+
+.catalog__categories {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.catalog__side-title {
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #363853;
+  padding: 15px;
+  border-bottom: 1px solid #ececec;
+}
+
+.catalog__list {
+  padding: 25px 15px;
+}
+
+.catalog__link {
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.catalog__link:last-child {
+  margin-bottom: 0;
+}
+
+.catalog__link a {
+  color: #31352b;
+  border-radius: 5px;
+}
+
+.catalog__link a:focus {
+  outline: 2px solid #FF7A50;
+  color: #31352b;
+}
+
+.catalog__link a:hover {
+  outline: none;
+  color: #FF6838;
+}
+
+.catalog__link a:active {
+  outline: none;
+  color: #31352b;
+  text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.5);
+}
+
+.catalog__offers {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.catalog__checkboxes {
+  padding: 25px 15px;
+}
+
+.catalog__checkbox {
+  margin-bottom: 12px;
+}
+
+.catalog__price {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+}
+
+.catalog__price-select {
+  padding: 25px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog__input {
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  color: #c2c2c2;
+}
+
+.catalog__input input {
+  width: 70px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  background-color: rgba(255, 122, 80, 0.1);
+  border: 1px solid #ececec;
+  border-radius: 3px;
+  padding: 12px 2px 12px 12px;
+  text-align: center;
+}
+
+.catalog__input input:focus {
+  border: 1px solid #FF6838;
+}
+
+.catalog__product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 870px;
+}
+
+.catalog__product-card {
+  margin-bottom: 10px;
+}
+
 .filter {
   padding: 15px 40px 15px 15px;
   border: 1px solid #c2c2c2;
@@ -1130,4 +1327,13 @@ body {
   appearance: none;
   background: url(../images/select.svg) calc(100% - 15px) center no-repeat;
   background-color: #ffffff;
+}
+
+.filter:focus {
+  border-color: #FF6838;
+}
+
+.filter:hover {
+  border-color: #FF6838;
+  color: #FF6838;
 }
