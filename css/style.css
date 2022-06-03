@@ -109,6 +109,24 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  position: relative;
+}
+
+.header__cart:after {
+  content: '4';
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FF6838;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 10px;
 }
 
 .header__cart:focus {
@@ -124,6 +142,11 @@ body {
   stroke: #ffffff;
 }
 
+.header__cart:hover:after {
+  background-color: #ffffff;
+  color: #FF7A50;
+}
+
 .header__cart:active {
   background-color: rgba(255, 122, 80, 0.1);
   box-shadow: none;
@@ -131,6 +154,11 @@ body {
 
 .header__cart:active path {
   stroke: #363853;
+}
+
+.header__cart:active:after {
+  background-color: #FF6838;
+  color: #ffffff;
 }
 
 .logo {
@@ -598,7 +626,7 @@ body {
 }
 
 .checkbox__label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
