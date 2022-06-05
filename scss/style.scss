@@ -365,52 +365,6 @@
             background-color: $orange-700;
         }
     }
-
-    &__button {
-        width: 34px;
-        height: 34px;
-        border: 3px solid $gray;
-        border-radius: 50%;
-        background-color: transparent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        svg {
-            margin-left: -2.5px;
-        }
-
-        &_next {
-            transform: rotate(180deg);
-        }
-
-        &:focus {
-            outline: 2px solid $orange-700;
-
-            &:hover {
-                outline: none;
-            }
-        }
-
-        &:hover {
-            background-color: $orange-100;
-            border-color: $orange-700;
-
-            path {
-                fill: $orange-700;
-            }
-        }
-
-        &:active {
-            background-color: $orange-100;
-            border: none;
-            outline: none;
-        
-            path {
-                fill: $orange-700;
-            }
-        }
-    }
 }
 
 .review {
@@ -692,5 +646,256 @@
     &:hover {
         border-color: $orange-900;
         color: $orange-900;
+    }
+}
+
+.interesting {
+    margin-bottom: 120px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 130%;
+        color: $darkBlue-900;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 93px;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.product {
+    padding-bottom: 60px;
+    border-bottom: 1px solid $silver-200;
+    margin-bottom: 30px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slider {
+        padding: 75px 105px;
+        background-color: $white;
+        border-radius: 5px;
+        border: 1px solid $silver-200;
+        position: relative;
+    }
+
+    &__image {
+        width: 400px;
+        height: 400px;
+    }
+
+    &__navigation {
+        width: 560px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__slider-button {
+        background-color: transparent;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_next {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 130%;
+        color: $darkBlue-900;
+        margin-bottom: 30px;
+    }
+
+    &__rating {
+        width: 104px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    &__star {
+
+        &_unset {
+            opacity: 0.3;
+
+            path {
+                fill: $gray-200;
+            }
+        }
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 140%;
+        color: $darkBlue-900;
+        margin-bottom: 20px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__counter {
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__amount {
+        width: 70px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0.03em;
+        color: $darkBlue-900;
+        background-color: $orange-100;
+    }
+
+    &__change-amount-button {
+        padding: 0px;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 100%;
+        width: 44px;
+        height: 44px;
+        border-radius: 3px 0px 0px 3px;
+
+        &_inc {
+            border-radius: 0px 3px 3px 0px;
+        }
+    }
+
+    &__add-button {
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        padding: 13px 38px;
+        font-size: 14px;
+        line-height: 130%;
+    
+        svg {
+            margin-right: 15px;
+        }
+    
+        &:hover,
+        &:focus,
+        &:active {
+    
+            path {
+                stroke: $orange-900;
+            }
+        }
+    }
+
+    &__delivery-title {
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $silver-200;
+        margin-bottom: 20px;
+    }
+
+    &__delivery-text {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: #505050;
+        margin-bottom: 20px;
+    }
+}
+
+.info {
+    margin-bottom: 120px;
+
+    &__container {
+        width: 690px;
+    }
+
+    &__tabs {
+        margin-bottom: 30px;
+    }
+
+    &__tab {
+        font-size: 24px;
+        line-height: 150%;
+        color: $darkBlue-900;
+        margin-right: 60px;
+        background-color: transparent;
+        border-radius: 5px;
+
+        &:focus {
+            outline: 2px solid $orange-700;
+        }
+    
+        &:hover {
+            color: $orange-900;
+            outline: none;
+        }
+    
+        &:active {
+            text-shadow: 2px 2px 5px $darkBlue-900;
+            outline: none;
+            color: $darkBlue-900;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &_active {
+            color: $orange-900;
+        }
+    }
+
+    &__tab-content {
+        font-size: 20px;
+        line-height: 150%;
+        opacity: 0.9;
+        display: none;
+
+        &_active {
+            display: block;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
     }
 }
