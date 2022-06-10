@@ -98,6 +98,10 @@ body {
 .logo {
     border-radius: 5px;
 
+    img {
+        width: 200px;
+    }
+
     &:focus {
         outline: 2px solid $orange-700;
     }

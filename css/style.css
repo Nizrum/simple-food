@@ -171,6 +171,10 @@ body {
   border-radius: 5px;
 }
 
+.logo img {
+  width: 200px;
+}
+
 .logo:focus {
   outline: 2px solid #FF7A50;
 }
@@ -947,6 +951,10 @@ body {
   margin-bottom: 30px;
 }
 
+.delivery__advantage {
+  margin-bottom: 20px;
+}
+
 .delivery__advantage:last-child {
   margin: 0;
 }
@@ -955,7 +963,6 @@ body {
   font-size: 24px;
   line-height: 150%;
   color: #363853;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
@@ -1569,25 +1576,12 @@ body {
   margin-bottom: 120px;
 }
 
-.interesting__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 60px;
-}
-
 .interesting__title {
   font-weight: 500;
   font-size: 36px;
   line-height: 130%;
   color: #363853;
-}
-
-.interesting__buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 93px;
+  margin-bottom: 60px;
 }
 
 .interesting__cards {
@@ -1814,7 +1808,7 @@ body {
   }
   .popular__tabs {
     overflow: scroll;
-    padding: 1px;
+    padding: 2px;
   }
   .popular__product-cards {
     justify-content: center;
@@ -1824,7 +1818,7 @@ body {
     margin: 0px 10px 20px;
   }
   .delivery__container {
-    padding: 0;
+    padding: 40px 0;
     background-size: 39%;
     background-position: center left;
   }
@@ -1889,8 +1883,11 @@ body {
   .product__navigation {
     width: 380px;
   }
-  .interesting__product-card:last-child {
-    display: none;
+  .interesting__cards {
+    overflow: scroll;
+  }
+  .interesting__product-card {
+    margin-right: 30px;
   }
 }
 
@@ -1916,6 +1913,9 @@ body {
   .menu__link {
     font-size: 16px;
     line-height: 18px;
+  }
+  .hero {
+    height: calc(100vh - 160px);
   }
   .hero__overlay {
     display: block;
@@ -2024,9 +2024,6 @@ body {
     white-space: nowrap;
     margin-top: 15px;
   }
-  .interesting__product-card:nth-child(4) {
-    display: none;
-  }
 }
 
 @media (max-width: 767px) {
@@ -2034,7 +2031,7 @@ body {
     width: 90%;
   }
   .header {
-    padding: 40px 0;
+    padding: 30px 0;
   }
   .header__menu-button {
     display: block;
@@ -2179,6 +2176,7 @@ body {
   .product__slider {
     padding: 22.5px;
     margin-bottom: 40px;
+    margin-right: 0;
   }
   .product__image {
     width: 300px;
@@ -2202,11 +2200,134 @@ body {
   }
   .interesting__title {
     font-size: 30px;
-  }
-  .interesting__header {
     margin-bottom: 40px;
   }
   .interesting__buttons {
     width: 80px;
+  }
+  .interesting__product-card {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo img {
+    width: 150px;
+  }
+  .hero {
+    margin-bottom: 60px;
+  }
+  .hero__title {
+    font-size: 48px;
+  }
+  .hero__subtitle {
+    font-size: 18px;
+  }
+  .popular {
+    margin-bottom: 60px;
+  }
+  .delivery {
+    margin-bottom: 60px;
+  }
+  .delivery__container {
+    padding: 35px 0;
+  }
+  .delivery__subtitle {
+    font-size: 18px;
+  }
+  .advantage {
+    font-size: 20px;
+  }
+  .advantage__text {
+    margin-left: 20px;
+  }
+  .best-restaurants {
+    margin-bottom: 60px;
+  }
+  .restaurant-card {
+    width: 345px;
+  }
+  .restaurant-card__image {
+    height: 300px;
+  }
+  .restaurant-card__button {
+    padding: 10px 32px 9px;
+  }
+  .restaurant-card__button:hover {
+    padding-right: 12px;
+    padding-left: 52px;
+  }
+  .reviews {
+    margin-bottom: 60px;
+  }
+  .reviews__content {
+    margin-bottom: 30px;
+  }
+  .review__image {
+    width: 150px;
+    height: 150px;
+  }
+  .review__text {
+    width: 80%;
+  }
+  .review__quote {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .review__username {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .app {
+    margin-bottom: 60px;
+  }
+  .catalog {
+    margin-bottom: 60px;
+  }
+  .catalog__product-list {
+    justify-content: space-around;
+  }
+  .promo {
+    margin-bottom: 60px;
+  }
+  .promo__cards {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 5px 10px 5px 5px;
+  }
+  .promo__promo-card {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  .promo__promo-card:last-child {
+    margin: 0;
+  }
+  .promo-card:focus {
+    box-shadow: 0px 3px 3px rgba(255, 104, 56, 0.5);
+  }
+  .promo-card:hover {
+    box-shadow: 0px 3px 3px rgba(255, 104, 56, 0.5);
+  }
+  .breadcrumbs__container {
+    overflow: hidden;
+  }
+  .breadcrumbs__link {
+    white-space: nowrap;
+  }
+  .product__navigation {
+    display: none;
+  }
+  .info {
+    margin-bottom: 60px;
+  }
+  .info__tab {
+    font-size: 20px;
+    margin-right: 30px;
+  }
+  .info__tab-content {
+    font-size: 18px;
   }
 }
