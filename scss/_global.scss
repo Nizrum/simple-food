@@ -87,6 +87,12 @@ body {
             }
         }
     }
+
+    &__menu-button {
+        background-color: transparent;
+        margin-left: 35px;
+        display: none;
+    }
 }
 
 .logo {

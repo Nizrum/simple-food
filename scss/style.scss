@@ -531,6 +531,26 @@
         }
     }
 
+    &__filter-button {
+        width: 49px;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $orange-100;
+        border-radius: 3px;
+        margin-right: 15px;
+        display: none;
+
+        svg {
+            height: 36px;
+        }
+
+        &:hover {
+            border: 1px solid $orange-900;
+        }
+    }
+
     &__body {
         display: flex;
         justify-content: space-between;
@@ -690,11 +710,54 @@
             margin-left: 6px;
         }
 
+        &:focus {
+            outline: 2px solid $orange-900;
+        }
+
+        &:hover {
+            background-color: $orange-900;
+
+            path {
+                fill: $white;
+            }
+        }
+
+        &:active {
+            box-shadow: inset 0px -1px 4px 2px rgba(0, 0, 0, 0.1);
+            background-color: $orange-100;
+            path {
+                fill: $darkBlue-900;
+            }
+            outline: none;
+        }
+
         &:disabled {
             cursor: not-allowed;
 
             path {
                 fill: $gray;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                background-color: $orange-100;
+
+                path {
+                    fill: $gray;
+                }
+            }
+
+            &:active {
+                box-shadow: none;
+                background-color: $orange-100;
+                outline: none;
+
+                path {
+                    fill: $gray;
+                }
             }
         }
     }
@@ -720,6 +783,22 @@
 
         &:last-child {
             margin-right: 0;
+        }
+
+        &:focus {
+            outline: 2px solid $orange-900;
+        }
+
+        &:hover {
+            background-color: $orange-900;
+            color: $white;
+        }
+
+        &:active {
+            box-shadow: inset 0px -1px 4px 2px rgba(0, 0, 0, 0.1);
+            background-color: $orange-100;
+            color: $darkBlue-900;
+            outline: none;
         }
     }
 }
@@ -1348,4 +1427,254 @@
             }
         }
     }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        padding: 40px 0;
+
+        &__menu-button {
+            display: block;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hero {
+        margin-bottom: 80px;
+
+        &__container {
+            background-position: center;
+        }
+
+        &__wrapper {
+            width: 100%;
+        }
+    }
+
+    .popular {
+        margin-bottom: 80px;
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        
+        &__product-cards {
+            margin: 0px -2.5px;
+        }
+        
+        &__product-card {
+            margin: 0px 2.5px 10px;
+        }
+
+        &__more-button {
+            margin-top: 30px;
+        }
+    }
+
+    .delivery {
+        margin-bottom: 80px;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__wrapper {
+            width: 100%;
+        }
+
+        &__container {
+            background-position: center;
+        }
+    }
+
+    .best-restaurants {
+        margin-bottom: 80px;
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        &__restaurants {
+            justify-content: space-around;
+        }
+    }
+
+    .restaurant-card {
+        width: 250px;
+
+        &__image {
+            height: 200px;
+        }
+
+        &__work-time {
+            padding-left: 30px;
+        }
+
+        &__button {
+            padding: 9px 24px 8px;
+
+            &:hover {
+                padding-right: 12px;
+                padding-left: 36px;
+            }
+        }
+    }
+
+    .reviews {
+        margin-bottom: 80px;
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .app {
+        margin-bottom: 80px;
+
+        &__container {
+            padding: 35px;
+        }
+
+        &__wrapper {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .promo {
+
+        &__cards {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &__promo-card {
+
+            &:last-child {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .product-card {
+        width: 170px;
+    }
+
+    .footer {
+        padding-bottom: 40px;
+    }
+
+    .breadcrumbs {
+        margin-bottom: 40px;
+    }
+
+    .catalog {
+        margin-bottom: 80px;
+
+        &__header {
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 30px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__filter-button {
+            display: block;
+        }
+
+        &__sidebar {
+            display: none;
+        }
+
+        &__main {
+            width: 100%;
+        }
+
+        &__product-list {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+    }
+
+    .promo {
+        margin-bottom: 80px;
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .product {
+
+        &__slider {
+            padding: 22.5px;
+            margin-bottom: 40px;
+        }
+
+        &__image {
+            width: 300px;
+            height: 300px;
+        }
+
+        &__navigation {
+            width: 500px;
+        }
+
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__add-button {
+            margin: 0;
+        }
+    }
+
+    .info {
+        margin-bottom: 80px;
+    }
+
+    .interesting {
+        margin-bottom: 80px;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__header {
+            margin-bottom: 40px;
+        }
+
+        &__buttons {
+            width: 80px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    
 }
