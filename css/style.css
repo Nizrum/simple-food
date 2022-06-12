@@ -2211,7 +2211,7 @@ body {
 }
 
 @media (max-width: 576px) {
-  .logo img {
+  .header .logo img {
     width: 150px;
   }
   .hero {
@@ -2329,5 +2329,314 @@ body {
   }
   .info__tab-content {
     font-size: 18px;
+  }
+  .interesting {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 25px 0;
+  }
+  .header .logo img {
+    width: 115px;
+  }
+  .hero {
+    height: calc(100vh - 160px);
+    margin-bottom: 40px;
+  }
+  .hero__title {
+    font-size: 40px;
+  }
+  .hero__subtitle {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 8px 24px;
+  }
+  .more-button {
+    font-size: 16px;
+  }
+  .popular {
+    margin-bottom: 40px;
+  }
+  .popular__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .popular__tabs {
+    margin-bottom: 30px;
+  }
+  .popular__product-card {
+    margin: 0px 5px 10px;
+  }
+  .product-card {
+    width: 140px;
+    padding: 16px 12px;
+  }
+  .product-card__image {
+    width: 100%;
+    height: auto;
+  }
+  .product-card__button {
+    font-size: 12px;
+    padding: 7px 21px;
+    white-space: nowrap;
+  }
+  .tab {
+    padding: 12px 16px;
+  }
+  .tab__text {
+    font-size: 14px;
+  }
+  .tab svg {
+    width: 20px;
+    height: 20px;
+  }
+  .delivery {
+    margin-bottom: 40px;
+  }
+  .delivery__title {
+    font-size: 24px;
+  }
+  .delivery__subtitle {
+    font-size: 16px;
+  }
+  .delivery__advantage {
+    margin-bottom: 15px;
+  }
+  .delivery__advantages {
+    margin-bottom: 20px;
+  }
+  .advantage__text {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .best-restaurants {
+    margin-bottom: 40px;
+  }
+  .best-restaurants__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .best-restaurants__restaurants {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 3px;
+  }
+  .best-restaurants__restaurant-card {
+    flex-shrink: 0;
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+  .best-restaurants__restaurant-card:last-child {
+    margin-right: 0;
+  }
+  .restaurant-card:hover {
+    box-shadow: 0px 3px 3px rgba(255, 104, 56, 0.5);
+  }
+  .reviews {
+    margin-bottom: 40px;
+  }
+  .reviews__container {
+    position: relative;
+  }
+  .reviews__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .reviews__bullets {
+    display: none;
+  }
+  .reviews__pagination {
+    position: absolute;
+    width: 80%;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .review__image {
+    margin-bottom: 20px;
+  }
+  .review__quote {
+    font-size: 14px;
+  }
+  .review__username {
+    font-size: 16px;
+  }
+  .app {
+    margin-bottom: 40px;
+  }
+  .app__container {
+    padding: 0;
+    background-image: none;
+  }
+  .app__overlay {
+    display: none;
+  }
+  .app__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .app__text {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .footer__subscribe {
+    margin-bottom: 30px;
+  }
+  .footer__menu {
+    margin-top: 30px;
+  }
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+  .catalog {
+    margin-bottom: 40px;
+  }
+  .catalog__title {
+    font-size: 24px;
+  }
+  .catalog__header {
+    margin-bottom: 30px;
+  }
+  .catalog__product-list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .catalog__product-card {
+    margin: 0px 5px 10px;
+  }
+  .filter {
+    padding: 15px 36px 15px 10px;
+  }
+  .promo {
+    margin-bottom: 40px;
+  }
+  .promo__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .product {
+    padding-bottom: 30px;
+  }
+  .product__slider {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .product__image {
+    width: 100%;
+    height: auto;
+  }
+  .product__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .product__rating {
+    margin-bottom: 15px;
+  }
+  .product__counter {
+    margin-bottom: 15px;
+  }
+  .product__add-button {
+    padding: 13px 38px;
+  }
+  .product__delivery-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .product__delivery-text {
+    margin-bottom: 15px;
+  }
+  .info {
+    margin-bottom: 40px;
+  }
+  .info__tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .interesting {
+    margin-bottom: 40px;
+  }
+  .interesting__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .interesting__product-card {
+    margin-right: 10px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__cart {
+    margin-left: 10px;
+  }
+  .header__menu-button {
+    margin-left: 20px;
+  }
+  .popular__product-cards {
+    justify-content: space-between;
+  }
+  .popular__product-card {
+    margin: 0 0 5px;
+  }
+  .product-card {
+    width: 49%;
+  }
+  .reviews__pagination {
+    width: 95%;
+  }
+  .review__quote:before {
+    left: -30px;
+  }
+  .review__quote:after {
+    right: -30px;
+  }
+  .app__button img {
+    height: 36px;
+  }
+  .app__button_appstore {
+    margin-right: 10px;
+  }
+  .restaurant-card {
+    width: 250px;
+  }
+  .restaurant-card__image {
+    height: 200px;
+  }
+  .restaurant-card__text {
+    padding: 15px;
+  }
+  .restaurant-card__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .restaurant-card__work-time {
+    padding-left: 30px;
+    font-size: 16px;
+  }
+  .restaurant-card__button {
+    padding: 9px 24px 8px;
+  }
+  .restaurant-card__button:hover {
+    padding-right: 12px;
+    padding-left: 36px;
+  }
+  .catalog__filter-button {
+    margin-right: 5px;
+  }
+  .catalog__filter {
+    margin-right: 5px;
+  }
+  .catalog__product-list {
+    justify-content: space-between;
+  }
+  .catalog__product-card {
+    margin: 0 0 5px;
   }
 }
