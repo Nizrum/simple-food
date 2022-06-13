@@ -1324,7 +1324,6 @@
 
         &__subscribe {
             order: 1;
-            margin-right: 50px;
         }
 
         &__menu {
@@ -1333,7 +1332,7 @@
             margin-top: 50px;
         }
 
-        &__info {
+        &__address {
             order: 2;
         }
 
@@ -1420,10 +1419,10 @@
         &__menu-button {
             display: block;
         }
-    }
 
-    .menu {
-        display: none;
+        &__menu {
+            display: none;
+        }
     }
 
     .hero {
@@ -1595,6 +1594,11 @@
         &__product-list {
             width: 100%;
             margin-bottom: 35px;
+            justify-content: center;
+        }
+
+        &__product-card {
+            margin: 0px 2.5px 10px;
         }
     }
 
@@ -2050,6 +2054,10 @@
         &__menu {
             margin-top: 30px;
         }
+    }
+
+    .address {
+        width: 100%;
     }
 
     .breadcrumbs {
