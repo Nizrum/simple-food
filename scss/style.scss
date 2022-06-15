@@ -509,6 +509,24 @@
 .catalog {
     margin-bottom: 120px;
 
+    &__close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        visibility: hidden;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: $orange-100;
+        }
+    }
+
     &__header {
         display: flex;
         align-items: center;
@@ -559,6 +577,7 @@
 
     &__sidebar {
         width: 271px;
+        position: relative;
     }
 
     &__main {
@@ -1585,6 +1604,22 @@
 
         &__sidebar {
             display: none;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            overflow: scroll;
+            width: 320px;
+            padding: 80px 50px 0 0;
+            background-color: $white;
+
+            &_active {
+                display: block;
+            }
+        }
+
+        &__close-button {
+            visibility: visible;
         }
 
         &__main {
@@ -1665,6 +1700,7 @@
     .header {
 
         .logo {
+            margin-right: 10px;
         
             img {
                 width: 150px;
