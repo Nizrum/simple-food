@@ -34,7 +34,7 @@
             </nav>
             <div class="header__buttons">
                 <div class="header__search search">
-                    <input type="text" name="search" class="search__input">
+                    <input type="text" name="search" class="search__input" tabindex="-1">
                     <button class="search__button">
                         <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg" alt="иконка поиска">
                             <ellipse cx="9.76663" cy="10.6301" rx="8.98856" ry="8.88424" stroke="#363853" stroke-width="1.5"
@@ -158,7 +158,7 @@
         <div class="container popular__container">
             <h2 class="popular__title">Популярные категории</h2>
             <div class="popular__tabs">
-                <button class="popular__tab tab">
+                <button class="popular__tab tab" value="burger">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_161)">
                             <path
@@ -183,9 +183,9 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    <p class="tab__text">Бургер</p>
+                    <p class="tab__text">Бургеры</p>
                 </button>
-                <button class="popular__tab tab">
+                <button class="popular__tab tab" value="pizza">
                     <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_172)">
                             <path
@@ -218,7 +218,7 @@
                     </svg>
                     <p class="tab__text">Пицца</p>
                 </button>
-                <button class="popular__tab tab">
+                <button class="popular__tab tab" value="sandwich">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_263)">
                             <path
@@ -254,7 +254,7 @@
                     </svg>
                     <p class="tab__text">Сендвичи</p>
                 </button>
-                <button class="popular__tab tab">
+                <button class="popular__tab tab" value="asian">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_199)">
                             <path
@@ -290,7 +290,7 @@
                     </svg>
                     <p class="tab__text">Азиатская кухня</p>
                 </button>
-                <button class="popular__tab tab">
+                <button class="popular__tab tab" value="set">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_228)">
                             <path
@@ -334,7 +334,7 @@
                 </button>
             </div>
             <div class="popular__product-cards">
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_burger product-card">
                     <img src="images/cheeseburger.jpg" alt="Бургер с двумя котлетами, кусочками помидора, 
                                     ломтиком сыра, листом салата и красным луком на булочке с кунжутом" class="product-card__image"
                         width="140" height="140">
@@ -342,7 +342,7 @@
                     <p class="product-card__price">160 <span>₽</span></p>
                     <button class="product-card__button button">В корзину</button>
                 </a>
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_pizza product-card">
                     <img src="images/beefburger.jpg" alt="Бургер с большой котлетой, кусочками помидора, 
                                     ломтиком сыра, листом салата, красным луком и 
                                     горчичным соусом на булочке с кунжутом" class="product-card__image" width="140" height="140">
@@ -350,21 +350,21 @@
                     <p class="product-card__price">190 <span>₽</span></p>
                     <button class="product-card__button button">В корзину</button>
                 </a>
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_sandwich product-card">
                     <img src="images/king-cheeseburger.jpg" alt="Бургер с котлетой, сыром, листом салата, беконом 
                                     и соусом барбекю на мягкой булочке" class="product-card__image" width="140" height="140">
                     <h3 class="product-card__title">Королевский чизбургер</h3>
                     <p class="product-card__price">260 <span>₽</span></p>
                     <button class="product-card__button button">В корзину</button>
                 </a>
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_asian product-card">
                     <img src="images/black-hamburger.jpg" alt="Бургер с сырной котлетой, помидором, 
                                     листьями салата и беконом на чёрной булочке" class="product-card__image" width="140" height="140">
                     <h3 class="product-card__title">Чёрный гамбургер</h3>
                     <p class="product-card__price">199 <span>₽</span></p>
                     <button class="product-card__button button">В корзину</button>
                 </a>
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_set product-card">
                     <img src="images/chickenburger.jpg" alt="Бургер с куриной котлетой, солёными огурцами, 
                                     двумя ломтиками сыра, листом салата и кетчупом на булочке с кунжутом" class="product-card__image"
                         width="140" height="140">
@@ -372,7 +372,7 @@
                     <p class="product-card__price">180 <span>₽</span></p>
                     <button class="product-card__button button">В корзину</button>
                 </a>
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_burger product-card">
                     <img src="images/cheeseburger.jpg" alt="Бургер с двумя котлетами, кусочками помидора, 
                                     ломтиком сыра, листом салата и красным луком на булочке с кунжутом" class="product-card__image"
                         width="140" height="140">
@@ -380,7 +380,7 @@
                     <p class="product-card__price">160 <span>₽</span></p>
                     <button class="product-card__button button">В корзину</button>
                 </a>
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_pizza product-card">
                     <img src="images/beefburger.jpg" alt="Бургер с большой котлетой, кусочками помидора, 
                                     ломтиком сыра, листом салата, красным луком и 
                                     горчичным соусом на булочке с кунжутом" class="product-card__image" width="140" height="140">
@@ -388,21 +388,21 @@
                     <p class="product-card__price">190 <span>₽</span></p>
                     <button class="product-card__button button">В корзину</button>
                 </a>
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_sandwich product-card">
                     <img src="images/king-cheeseburger.jpg" alt="Бургер с котлетой, сыром, листом салата, беконом 
                                     и соусом барбекю на мягкой булочке" class="product-card__image" width="140" height="140">
                     <h3 class="product-card__title">Королевский чизбургер</h3>
                     <p class="product-card__price">260 <span>₽</span></p>
                     <button class="product-card__button button">В корзину</button>
                 </a>
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_asian product-card">
                     <img src="images/black-hamburger.jpg" alt="Бургер с сырной котлетой, помидором, 
                                     листьями салата и беконом на чёрной булочке" class="product-card__image" width="140" height="140">
                     <h3 class="product-card__title">Чёрный гамбургер</h3>
                     <p class="product-card__price">199 <span>₽</span></p>
                     <button class="product-card__button button">В корзину</button>
                 </a>
-                <a href="product-page.html" class="popular__product-card product-card">
+                <a href="product-page.html" class="popular__product-card popular__product-card_set product-card">
                     <img src="images/chickenburger.jpg" alt="Бургер с куриной котлетой, солёными огурцами, 
                                     двумя ломтиками сыра, листом салата и кетчупом на булочке с кунжутом" class="product-card__image"
                         width="140" height="140">
@@ -538,8 +538,8 @@
         <div class="reviews__container container">
             <h2 class="reviews__title">Отзывы клиентов</h2>
             <div class="reviews__content">
-                <div class="reviews__review review review_active">
-                    <img src="images/review-author.jpg" alt="фотография пользователя" class="review__image">
+                <div class="reviews__review review">
+                    <img src="images/review-author-1.jpg" alt="фотография пользователя" class="review__image">
                     <div class="review__text">
                         <p class="review__quote">
                             SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе.
@@ -551,44 +551,44 @@
                     </div>
                 </div>
                 <div class="reviews__review review">
-                    <img src="images/review-author.jpg" alt="фотография пользователя" class="review__image">
+                    <img src="images/review-author-2.jpeg" alt="фотография пользователя" class="review__image">
                     <div class="review__text">
                         <p class="review__quote">
                             SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе.
                             Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны.
                             Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
                         </p>
-                        <p class="review__username">Дарья</p>
+                        <p class="review__username">Геннадий</p>
                         <p class="review__userstatus">Ценитель вкусной еды</p>
                     </div>
                 </div>
                 <div class="reviews__review review">
-                    <img src="images/review-author.jpg" alt="фотография пользователя" class="review__image">
+                    <img src="images/review-author-3.jpeg" alt="фотография пользователя" class="review__image">
                     <div class="review__text">
                         <p class="review__quote">
                             SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе.
                             Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны.
                             Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
                         </p>
-                        <p class="review__username">Дарья</p>
+                        <p class="review__username">Клавдия</p>
                         <p class="review__userstatus">Ценитель вкусной еды</p>
                     </div>
                 </div>
                 <div class="reviews__review review">
-                    <img src="images/review-author.jpg" alt="фотография пользователя" class="review__image">
+                    <img src="images/review-author-4.jpeg" alt="фотография пользователя" class="review__image">
                     <div class="review__text">
                         <p class="review__quote">
                             SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе.
                             Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны.
                             Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
                         </p>
-                        <p class="review__username">Дарья</p>
+                        <p class="review__username">Агафья</p>
                         <p class="review__userstatus">Ценитель вкусной еды</p>
                     </div>
                 </div>
             </div>
             <div class="reviews__pagination">
-                <button class="reviews__button slider-button">
+                <button class="reviews__button slider-button slider-button_prev">
                     <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M8.19676 18.0492L0.450821 10.3033C-0.150273 9.69905 -0.150273 8.72311 0.450821 8.11889L8.19676 0.372949C8.77613 -0.124317 9.63285 -0.124317 10.2122 0.372949C10.8614 0.929121 10.9372 1.90818 10.3811 2.55732L3.73512 9.20334L10.3811 15.8648C10.9822 16.469 10.9822 17.445 10.3811 18.0492C9.77691 18.6503 8.8009 18.6503 8.19676 18.0492Z"
@@ -596,10 +596,10 @@
                     </svg>
                 </button>
                 <div class="reviews__bullets">
-                    <button class="reviews__bullet reviews__bullet_active"></button>
-                    <button class="reviews__bullet"></button>
-                    <button class="reviews__bullet"></button>
-                    <button class="reviews__bullet"></button>
+                    <button class="reviews__bullet reviews__bullet_active" value="1"></button>
+                    <button class="reviews__bullet" value="2"></button>
+                    <button class="reviews__bullet" value="3"></button>
+                    <button class="reviews__bullet" value="4"></button>
                 </div>
                 <button class="reviews__button slider-button slider-button_next">
                     <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
