@@ -94,13 +94,13 @@
     &__product-cards {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        margin: 0px -15px 30px;
     }
 
     &__product-card {
-        margin-bottom: 30px;
+        margin: 0px 15px 30px;
     }
 
     &__more-button {
@@ -411,6 +411,7 @@
         height: 300px;
         border-radius: 50%;
         margin-right: 80px;
+        object-fit: cover;
     }
 
     &__text {
@@ -1097,7 +1098,6 @@
         }
 
         &__product-cards {
-            justify-content: center;
             margin: 0px -10px;
         }
 
@@ -1608,14 +1608,19 @@
             z-index: 10;
             top: 0;
             left: 0;
-            overflow: scroll;
+            overflow-y: scroll;
             width: 320px;
-            padding: 80px 50px 0 0;
+            max-height: 100vh;
+            padding: 80px 50px 50px 1px;
             background-color: $white;
 
             &_active {
                 display: block;
             }
+        }
+
+        &__input:first-child {
+            margin-bottom: 0;
         }
 
         &__close-button {
@@ -2085,6 +2090,10 @@
 
         &__subscribe {
             margin-bottom: 30px;
+        }
+
+        &__button {
+            padding: 13px 38px;
         }
 
         &__menu {
