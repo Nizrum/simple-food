@@ -882,6 +882,11 @@
         position: relative;
     }
 
+    &__popup-link {
+        position: relative;
+        z-index: 2;
+    }
+
     &__image {
         width: 400px;
         height: 400px;

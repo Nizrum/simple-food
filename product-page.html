@@ -164,9 +164,10 @@
     <section class="product">
         <div class="container product__container">
             <div class="product__slider">
-                <img src="./images/cheeseburger-big.jpg" alt="Бургер с двумя котлетами, кусочками помидора, 
-                                            ломтиком сыра, листом салата и красным луком на булочке с кунжутом"
-                    class="product__image">
+                <a class="product__popup-link" data-fslightbox href="./images/cheeseburger-big.jpg">
+                    <img src="./images/cheeseburger-big.jpg" alt="Бургер с двумя котлетами, кусочками помидора, 
+                    ломтиком сыра, листом салата и красным луком на булочке с кунжутом" class="product__image">
+                </a>
                 <div class="product__navigation">
                     <button class="product__slider-button">
                         <svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -261,7 +262,7 @@
                 <p class="product__price">160 <span>руб.</span></p>
                 <div class="product__buttons">
                     <div class="product__counter">
-                        <button class="product__change-amount-button button">-</button>
+                        <button class="product__change-amount-button product__change-amount-button_dec button">-</button>
                         <span class="product__amount">1</span>
                         <button class="product__change-amount-button product__change-amount-button_inc button">+</button>
                     </div>
@@ -467,6 +468,7 @@
         <p>© 2021 Simple Food</p>
     </section>
     <div class="overlay"></div>
+    <script src="./js/fslightbox.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

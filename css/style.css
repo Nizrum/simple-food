@@ -1757,6 +1757,11 @@ body {
   position: relative;
 }
 
+.product__popup-link {
+  position: relative;
+  z-index: 2;
+}
+
 .product__image {
   width: 400px;
   height: 400px;
