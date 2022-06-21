@@ -730,6 +730,7 @@ body {
         margin-right: 12px;
         width: 24px;
         height: 24px;
+        flex-shrink: 0;
         border: 1px solid $silver-200;
         border-radius: 3px;
         background-color: $orange-100;
