@@ -678,7 +678,7 @@ body {
 }
 
 .address__social:last-child {
-  margin-right: none;
+  margin-right: 0;
 }
 
 .address__social:focus {
